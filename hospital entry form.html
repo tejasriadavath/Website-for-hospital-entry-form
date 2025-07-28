@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inline-label {
+  display: inline-block;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.checkbox {
+  display: inline-block;
+}
+
+.checkbox label {
+  margin-left: 5px;
+}
+
+.disclaimer {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>NEW PATIENT PRE-REGISTRATION FORM</h1>
+  <p>        Please complete and bring at the time of your first appointment.</p>
+
+  <h2>Patient Demographics</h2>
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <th>Address:</th>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <th>City:</th>
+      <td><input type="text" name="city"></td>
+    </tr>
+    
+    <tr>
+      <th>Cell Phone:</th>
+      <td><input type="tel" name="cell_phone"></td>
+    </tr>
+    <tr>
+      <th>E-mail:</th>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <th>Date of Birth:</th>
+      <td><input type="date" name="dob"></td>
+    </tr>
+    <tr>
+      <th>State:</th>
+      <td><input type="text" name="state"></td>
+    </tr>
+  </table>
+
+  <h2>Primary Physician:</h2>
+  <input type="text" name="primary_physician">
+
+  <h2>How did you hear about us?</h2>
+  <div class="form-group">
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="radio">
+      <label>Radio</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="tv">
+      <label>TV</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="print_ad">
+      <label>Print Ad</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="friend">
+      <label>Friend</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="insurance">
+      <label>Insurance</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="elliot_on_call">
+      <label>Elliot ON-CALL</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="hear_about_us" value="other">
+      <label>Other</label>
+    </div>
+  </div>
+
+  <h2>In case of an emergency:</h2>
+
+  <table>
+    <tr>
+      <th>Contact #1:</th>
+      <td><input type="text" name="contact_1"></td>
+    </tr>
+    <tr>
+      <th>Relationship:</th>
+      <td><input type="text" name="relationship_1"></td>
+    </tr>
+    <tr>
+      <th>Home Phone:</th>
+      <td><input type="tel" name="home_phone_1"></td>
+    </tr>
+    <tr>
+      <th>Contact #2:</th>
+      <td><input type="text" name="contact_2"></td>
+    </tr>
+    <tr>
+      <th>Relationship:</th>
+      <td><input type="text" name="relationship_2"></td>
+    </tr>
+    <tr>
+      <th>Home Phone:</th>
+      <td><input type="tel" name="home_phone_2"></td>
+    </tr>
+  </table>
+
+  
+  <h2>Guarantor Information (person financially responsible)</h2>
+
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td><input type="text" name="guarantor_name"></td>
+    </tr>
+    <tr>
+      <th>Address:</th>
+      <td><input type="text" name="guarantor_address"></td>
+    </tr>
+    <tr>
+      <th>City:</th>
+      <td><input type="text" name="guarantor_city"></td>
+    </tr>
+    <tr>
+      <th>Home Phone:</th>
+      <td><input type="tel" name="guarantor_home_phone"></td>
+    </tr>
+    <tr>
+      <th>Relationship:</th>
+      <td><input type="text" name="guarantor_relationship"></td>
+    </tr>
+    
+    <tr>
+      <th>State:</th>
+      <td><input type="text" name="guarantor_state"></td>
+    </tr>
+    
+    
+    <tr>
+      <th>Phone:</th>
+      <td><input type="tel" name="guarantor_phone"></td>
+    </tr>
+    <tr>
+      <th>City:</th>
+      <td><input type="text" name="guarantor_city"></td>
+    </tr>
+  </table>
+
+  
+  
+
+  <h2>DISCLAIMER STATEMENT</h2>
+
+  <div class="disclaimer">
+    <p>I authorize Elliot Physician network to submit claims to my insurance carrier and to release any medical information necessary to process all claims. I also authorize payment for any medical benefits to the aforementioned for all services provided until further notified for this account. I agree that I am financially responsible for any co-pay and self-pay balance at the time of service, and any balance that may be due after the claims have been submitted to my insurance.</p>
+  </div>
+
+  <button class="button">Submit</button>
+</div>
+
+</body>
+</html>
